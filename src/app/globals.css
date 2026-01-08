@@ -92,7 +92,22 @@
 
 @layer utilities {
   .gradient-bg {
-    background: linear-gradient(135deg, #0a0f1c 0%, #111827 50%, #0f172a 100%);
+    background: radial-gradient(circle at 0% 0%, #1e293b 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, #0f172a 0%, transparent 50%),
+                #0a0f1c;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .grid-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  .glass-card {
+    background: rgba(17, 24, 39, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
   }
   
   .gradient-card {

@@ -106,15 +106,13 @@ export default function DPRDetailPage() {
     setSubmitting(true)
 
     try {
-      const { data: { user } } = await supabase.auth.getUser()
-
       if (assessment) {
         await supabase
           .from("assessments")
           .update({
             final_decision: decisionType === "approve" ? "approved" : "rejected",
             reviewer_comments: reviewerComments,
-            reviewed_by: user?.id,
+            reviewed_by: null,
           })
           .eq("id", assessment.id)
       }

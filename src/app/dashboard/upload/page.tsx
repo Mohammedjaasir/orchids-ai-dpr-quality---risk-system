@@ -82,15 +82,7 @@ export default function UploadPage() {
     setUploading(true)
 
     try {
-      const { data: { user } } = await supabase.auth.getUser()
-      if (!user) {
-        toast.error("You must be logged in to upload")
-        router.push("/login")
-        return
-      }
-
-      const fileExt = file.name.split(".").pop()
-      const fileName = `${user.id}/${Date.now()}.${fileExt}`
+      const fileName = `public/${Date.now()}-${file.name}`
 
       const { error: uploadError, data: uploadData } = await supabase.storage
         .from("dprs")
@@ -113,7 +105,7 @@ export default function UploadPage() {
           file_url: publicUrl,
           file_name: file.name,
           file_type: file.type,
-          uploaded_by: user.id,
+          uploaded_by: null,
           status: "pending",
         })
         .select()
