@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI-Powered DPR Quality Assessment & Risk Prediction System
 
-## Getting Started
+---
 
-First, run the development server:
+📌 Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The AI-Powered DPR Quality Assessment and Risk Prediction System is a full-stack web application that automatically evaluates the quality of Detailed Project Reports (DPRs) and predicts potential risks using Artificial Intelligence and Machine Learning.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This system helps government departments, infrastructure agencies, and decision-makers reduce manual effort, improve accuracy, and identify risks early before project execution.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🎯 Problem Statement
 
-## Learn More
+Manual evaluation of DPR documents is time-consuming, subjective, and error-prone, often leading to:
 
-To learn more about Next.js, take a look at the following resources:
+- Poor project planning
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Cost overruns
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Delays and failures
 
-## Deploy on Vercel
+There is a need for an intelligent, automated system that can analyze DPRs and provide quality scores and risk insights.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+💡 Solution
+
+This project uses AI + NLP + ML to:
+
+- Analyze DPR documents
+
+- Assess document quality
+
+- Predict project risk levels
+
+- Provide structured insights via a web dashboard
+
+---
+
+⚙️ Key Features
+
+📄 Upload DPR documents (PDF/Text)
+
+🧠 AI-based quality scoring
+
+⚠️ Risk prediction (Low / Medium / High)
+
+📊 Dashboard with insights & visualizations
+
+🔍 NLP-based text analysis
+
+🌐 Full-stack web application
+
+---
+
+🏗️ System Architecture
+
+1.Frontend (UI)
+
+User uploads DPR
+
+Views results & risk analysis
+
+2.Backend (API)
+
+Handles file processing
+
+Sends data to ML models
+
+3.AI/ML Engine
+
+NLP preprocessing
+
+Quality assessment model
+
+Risk prediction model
+
+4.Database
+
+Stores reports, scores, and predictions
+
+---
+
+🛠️ Technologies Used
+
+1.Frontend
+
+React.js / Vite
+
+Tailwind CSS
+
+Chart.js / Recharts
+
+2.Backend
+
+Python
+
+Flask / FastAPI
+
+REST APIs
+
+3.AI & Machine Learning
+
+Python
+
+Scikit-learn
+
+NLP (TF-IDF / Transformers)
+
+Pandas & NumPy
+
+4.Database
+
+PostgreSQL / MongoDB
+
+5.Deployment
+
+Frontend: Netlify
+
+Backend: Render
+
+Version Control: Git & GitHub
+
+---
+
+🧪 Machine Learning Workflow
+
+- Data Collection (Past DPRs)
+
+- Text Cleaning & Preprocessing
+
+- Feature Extraction (NLP)
+
+- Model Training
+
+- Quality Scoring
+
+- Risk Prediction
+
+- Model Evaluation
+
+---
+
+📊 Output
+
+Quality Score (0–100)
+
+Risk Level (Low / Medium / High)
+
+Highlighted risk factors
+
+Suggestions for improvement
