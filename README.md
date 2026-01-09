@@ -1,6 +1,7 @@
 # AI-Powered DPR Quality Assessment & Risk Prediction System
 
 ---
+<img width="947" height="475" alt="image" src="https://github.com/user-attachments/assets/4b7f6649-7c88-4a8f-959b-844f0567f330" />
 
 📌 Project Overview
 
